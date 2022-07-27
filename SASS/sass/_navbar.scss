@@ -5,15 +5,53 @@ Estos tipos de arhivos tienen como objetivo ser utilizados en otras hojas
 principales de sass
 */
 @use './variables';
+@use './mixinsfunc';
+$selector: '.nav';
+
+//Si se quiere usar las variables en las propiedades o en los selectores
+//primero tenemos que interpolarlo #{}
+//Ejemplo:
+// #{$selector}{
+
+// }
 
 .nav{
   background-color: variables.$color1;
 
-  ul{
-    color: #000;
+  /* ANIDAMIENTO */
+  // ul{
+  //   color: #000;
 
-    li{
-      color: #fff;
+  //   li{
+  //     color: #fff;
+  //   }
+  // }
+
+  &__container{
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+    // #{variables.$display}: flex; <-- variable en propiedad
+    @include mixinsfunc.crear-flexbox(space-evenly);
+  }
+
+  &__item{
+    color: #fff;
+    text-decoration: none;
+    
+    &--active{
+      text-decoration: underline;
+    }
+
+    // &:hover{
+    //   color: #000;
+    // }
+  }
+
+  @media ( min-width:764px ) {
+    &__container{
+      justify-content: flex-end;
+      gap: 1em;
     }
   }
 }

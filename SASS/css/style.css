@@ -15,12 +15,49 @@ principales de sass
 */
 .nav {
   background-color: steelblue;
+  /* ANIDAMIENTO */
 }
-.nav ul {
-  color: #000;
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.nav ul li {
+.nav__item {
   color: #fff;
+  text-decoration: none;
+}
+.nav__item--active {
+  text-decoration: underline;
+}
+@media (min-width: 764px) {
+  .nav__container {
+    justify-content: flex-end;
+    gap: 1em;
+  }
+}
+
+.hero__container {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7098039216), rgba(0, 0, 0, 0.7254901961)), url("https://i.pinimg.com/originals/4f/c5/78/4fc57849322b22a734a8712bed6592da.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero__texts {
+  color: #fff;
+}
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+.hero__paragraph {
+  font-size: 1.125rem;
 }
 
 /*# sourceMappingURL=style.css.map */
