@@ -15,7 +15,7 @@
   ```
     sass --watch path_archivos_sass:path_donde_se_dejan_archivos_css
   ```
-Ejemplo:
+- Ejemplo:
   ```
     sass --watch sass:css
   ```
