@@ -11,7 +11,7 @@
 
 ## Compilación
 
-- Comando para que compile todos los archivos scss que estan en la carpeta sass y los ponga en una carpeta css
+- Comando para que compile todos los archivos scss y los deje en una carpeta css
   ```
     sass --watch path_archivos_sass:path_donde_se_dejan_archivos_css
   ```
