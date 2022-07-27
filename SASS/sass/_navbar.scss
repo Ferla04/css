@@ -1,2 +1,19 @@
-//Los tipos de archivos que comienzan con _ significa que son archivos
-//sass que no van a hacer compilados
+/* parchal
+Los tipos de archivos que comienzan con _ significa que son archivos
+sass que no van a hacer compilados.
+Estos tipos de arhivos tienen como objetivo ser utilizados en otras hojas
+principales de sass
+*/
+@use './variables';
+
+.nav{
+  background-color: variables.$color1;
+
+  ul{
+    color: #000;
+
+    li{
+      color: #fff;
+    }
+  }
+}

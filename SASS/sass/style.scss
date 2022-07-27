@@ -1,7 +1,7 @@
-//Variables
-$color1: crimson;
+//Usar otras hojas de estilos
+@use './reset';
+@use './navbar';
 
-h2{
-  color: $color1;
-  font-size: 3rem;
-}
+
+
+

@@ -1,6 +1,26 @@
-h2 {
-  color: crimson;
-  font-size: 3rem;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* parchal
+Los tipos de archivos que comienzan con _ significa que son archivos
+sass que no van a hacer compilados.
+Estos tipos de arhivos tienen como objetivo ser utilizados en otras hojas
+principales de sass
+*/
+.nav {
+  background-color: steelblue;
+}
+.nav ul {
+  color: #000;
+}
+.nav ul li {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
